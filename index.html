@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anasayfa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
     <style>
       html, body {
-    width: 100%;
-    height: 350vh;
-    margin-right: 60px;
-     margin-left: 60px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
 }
 
         body{
-            height: 100vh;
+            height: 150vh;
             background-color: #f8f9fa;
             margin-bottom: 60px;
         
@@ -148,7 +148,19 @@
     .btn-link:hover:after {
       content: " Tıklayınız";
     }
-    
+
+    .accordion-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .accordion-card {
+      flex: 0 0 auto;
+      width: 300px; 
+      margin-right: 10px; 
+      cursor: pointer;
+    }
+
   
     </style>
 </head>
@@ -167,14 +179,14 @@
     <a class="nav-link" href="https://www.robotistan.com/arduino-uno-r3-klon">satış</a>
     </li>
      <li class="nav-item">
-    <a class="nav-link" href="gırıs.html">giriş</a>
+    <a class="nav-link" href="giris.html">giriş</a>
     </li>
     </ul>
     </div>
   </nav> 
   <br><br><br><br> 
 
-      <div class="jumbotron my-3 mx-auto">
+      <div class="jumbotron my-3 mx-auto px-5">
         <h1 class="display-4">arduino hakkında</h1>
         <p class="lead">Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder.</p>
         <hr class="my-4">
@@ -184,30 +196,30 @@
         </p>
     </div> 
 
-    <div class="container">
-        <div class="row">
-         <div class="col-md-6">
-         <div class="title">arduino hakkında sorular</div>
+    <div class="container pr-5">
+        <div class="row ">
+         <div class="col-md-6 ">
+         <div class="title ">arduino hakkında sorular</div>
            <p>Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder. Arduino, sanatçılar, tasarımcılar, hobiciler vb. teknolojiyle ilgilenen herkese elektroniği daha erişilebilir hale getirmek için tasarlanmıştır.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
           <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 ">
          <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir ve ne işe yarar?</a></div>
          </div>
-         <div class="col-md-6">
+         <div class="col-md-6 ">
          <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir?</a></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
           <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino öğrenmek zor mu?</a></div>
           </div>
-           <div class="col-md-6">
+           <div class="col-md-6 ">
            <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nerede kullanılır?</a></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
          <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino ile ne yapabilirim?</a></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ">
           <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino pahalı mıdır?</a></div>
           </div>
            </div>
@@ -219,7 +231,7 @@
         <br>
        <br>
 
-       <div class="container">
+       <div class="container pr-5">
       <div class="header">
       <div class="row">
       <div class="col-md-6">
@@ -239,8 +251,8 @@
        <br>
        <br>
 
-       <div class="container">
-        <div class="question-container">
+       <div class="container pr-5">
+        <div class="question-container pr-5">
             <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
             <div class="options-container">
                 <div class="form-check">
@@ -254,7 +266,7 @@
             </div>
         </div>
     
-        <div class="question-container">
+        <div class="question-container pr-5">
             <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
             <div class="options-container">
                 <div class="form-check">
@@ -268,7 +280,7 @@
             </div>
         </div>
     
-        <div class="question-container">
+        <div class="question-container pr-5">
             <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
             <div class="options-container">
                 <div class="form-check">
@@ -282,7 +294,7 @@
             </div>
         </div>
     
-        <div class="question-container">
+        <div class="question-container pr-5">
             <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
             <div class="options-container">
                 <div class="form-check">
@@ -328,84 +340,105 @@
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
-           <div class="container mt-5">
-            <div id="accordion">
-            <h2 class="text-center mb-4">Kendin Yap SSS</h2>
-            <div class="card">
-             <div class="card-header">
-             <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Bulut bilişim </button>
-             </h5>
-              </div>
-              <div id="collapse1" class="collapse">
-            <div class="card-body">
-              Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-             </div>
-            </div>
-            </div>
-            <div class="card">
-             <div class="card-header">
-            <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">ADC Nasıl Kullanılır</button>
-                </h5>
-              </div>
-              <div id="collapse2" class="collapse">
-            <div class="card-body">
-              Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-           </div>
-           </div>
-            </div>
-            <div class="card">
-             <div class="card-header">
-            <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">
-             UART Nasıl Programlanır</button>
-          </h5>
-           </div>
-           <div id="collapse3" class="collapse">
-            <div class="card-body">
-              Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-           </div>
-            </div>
-            </div>
-            <div class="card">
-           <div class="card-header">
-           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">GPIO Nasıl Programlanır</button>
-            </h5>
-         </div>
-         <div id="collapse4" class="collapse">
-            <div class="card-body">
-              Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-             </div>
-            </div>
-            </div>
-            <div class="card">
-           <div class="card-header">
-            <h5 class="mb-0">
-             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5">Robotik ve 3D baskı</button>
-            </h5>
-           </div>
-           <div id="collapse5" class="collapse">
-           <div class="card-body">
-            Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-         </div>
-         </div>
-        </div>
-        <div class="card">
+        <div class="container mt-5">
+        <div class="accordion-container" id="accordion1">
+        <div class="accordion-card">
+         <div class="card">
         <div class="card-header">
-         <h5 class="mb-0">
-         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6">LCD'yi Arduino'ya Bağlama</button>
-          </h5>
+       <h5 class="mb-0">
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Bulut Bilişim </button>
+      </h5>
+      </div>
+     <div id="collapse1" class="collapse">
+     <div class="card-body">
+     Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+      </div>
+      </div>
+      </div>
+      </div>
+    
+      <div class="accordion-card">
+     <div class="card">
+     <div class="card-header">
+    <h5 class="mb-0">
+     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">ADC Nasıl Kullanılır</button>
+     </h5>
+     </div>
+     <div id="collapse2" class="collapse">
+    <div class="card-body">
+      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+     </div>
+     </div>
+    </div>
+    </div>
+          
+   <div class="accordion-card">
+  <div class="card">
+  <div class="card-header">
+   <h5 class="mb-0">
+    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">
+      UART Nasıl Programlanır</button>
+    </h5>
+     </div>
+    <div id="collapse3" class="collapse">
+     <div class="card-body">
+      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+     </div>
+    </div>
+     </div>
+    </div>
+     </div>
+    </div>
+       <br> 
+      <div class="container mt-5">
+    <div class="accordion-container" id="accordion1">
+  <div class="accordion-card">
+    <div class="card">
+     <div class="card-header">
+     <h5 class="mb-0">
+     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">GPIO Nasıl Programlanır</button>
+     </h5>
+   </div>
+      <div id="collapse1" class="collapse">
+       <div class="card-body">
+        GPIO Nasıl Programlanır
+        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+      </div>
+       </div>
+       </div>
+     </div>
+          
+     <div class="accordion-card">
+     <div class="card">
+      <div class="card-header">
+     <h5 class="mb-0">
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">Robotik ve 3D baskı</button>
+        </h5>
+      </div>
+     <div id="collapse2" class="collapse">
+      <div class="card-body">
+        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+       </div>
+        </div>
+        </div>
          </div>
-         <div id="collapse6" class="collapse">
-         <div class="card-body">
-          Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+          
+          <div class="accordion-card">
+          <div class="card">
+          <div class="card-header">
+          <h5 class="mb-0">
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">LCD'yi Arduino'ya Bağlama</button>
+          </h5>
         </div>
+        <div id="collapse3" class="collapse">
+       <div class="card-body">
+        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+         </div>
+         </div>
         </div>
-        </div>
-        </div>
-        </div>
+       </div>
+         </div>
+      </div>
         
          
      <br><br><br><br><br><br>
