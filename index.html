@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anasayfa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
+    <link rel="icon" type="image/png" href="img/faviconn.png">
+
     <style>
-      html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-}
+      
+
 
         body{
-            height: 150vh;
+            height: 250vh;
             background-color: #f8f9fa;
             margin-bottom: 60px;
         
@@ -40,6 +38,14 @@
             
 
         }
+
+        main{
+          margin-right: 40px;
+          margin-left: 40px;
+        }
+        
+
+       
     .jumbotron {
     padding-top: 20px;
     padding-bottom: 20px; 
@@ -160,11 +166,28 @@
       margin-right: 10px; 
       cursor: pointer;
     }
+    @media (max-width: 767px) {
+        .custom-box {
+            margin-left: 50px;
+        }
+    }
+    .button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.containerr{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+ 
 
   
     </style>
 </head>
 <body>
+  <main>
   <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
     <a class="navbar-brand" href="#">BULUT SATIŞ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -186,6 +209,7 @@
   </nav> 
   <br><br><br><br> 
 
+    
       <div class="jumbotron my-3 mx-auto px-5">
         <h1 class="display-4">arduino hakkında</h1>
         <p class="lead">Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder.</p>
@@ -226,6 +250,7 @@
           </div>
           </div>
         </div> 
+      
 
         <br>
         <br>
@@ -251,7 +276,7 @@
        <br>
        <br>
 
-       <div class="container pr-5">
+       <div class="containerr pr-5">
         <div class="question-container pr-5">
             <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
             <div class="options-container">
@@ -308,6 +333,10 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="button-container">
+      <button id="finish-button">Finish</button>
+    </div>
     
     <br><br><br>
       
@@ -340,109 +369,111 @@
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <div class="container mt-5">
-        <div class="accordion-container" id="accordion1">
-        <div class="accordion-card">
+        
+          <div class="containerr mt-5">
+            <div class="accordion-container" id="accordion1">
+             <div class="accordion-card">
+           <div class="card">
+            <div class="card-header">
+            <h5 class="mb-0">
+             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Bulut Bilişim</button>
+            </h5>
+           </div>
+           <div id="collapse1" class="collapse">
+            <div class="card-body">
+           Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+          </div>
+         </div>
+           </div>
+           </div>
+      
+             <div class="accordion-card">
+          <div class="card">
+        <div class="card-header">
+         <h5 class="mb-0">
+           <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">ADC Nasıl Kullanılır</button>
+          </h5>
+           </div>
+             <div id="collapse2" class="collapse">
+            <div class="card-body">
+             Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+            </div>
+           </div>
+           </div>
+            </div>
+      
+             <div class="accordion-card">
+           <div class="card">
+           <div class="card-header">
+          <h5 class="mb-0">
+         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">UART Nasıl Programlanır</button>
+          </h5>
+          </div>
+          <div id="collapse3" class="collapse">
+          <div class="card-body">
+           Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+           </div>
+           </div>
+            </div>
+             </div>
+            </div>
+             </div>
+            
+      
+      <br>
+      
+             <div class="containerr mt-5" >
+             <div class="accordion-container" id="accordion2">
+              <div class="accordion-card">
+             <div class="card">
+              <div class="card-header">
+              <h5 class="mb-0">
+             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">GPIO Nasıl Programlanır</button>
+              </h5>
+              </div>
+               <div id="collapse4" class="collapse">
+             <div class="card-body">
+            GPIO Nasıl Programlanır Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+             </div>
+             </div>
+             </div>
+              </div>
+      
+             <div class="accordion-card">
+           <div class="card">
+           <div class="card-header">
+          <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5">Robotik ve 3D baskı</button>
+           </h5>
+          </div>
+          <div id="collapse5" class="collapse">
+         <div class="card-body">
+         Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+         </div>
+        </div>
+        </div>
+         </div>
+      
+          <div class="accordion-card">
          <div class="card">
         <div class="card-header">
-       <h5 class="mb-0">
-      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Bulut Bilişim </button>
-      </h5>
-      </div>
-     <div id="collapse1" class="collapse">
-     <div class="card-body">
-     Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-      </div>
-      </div>
-      </div>
-      </div>
-    
-      <div class="accordion-card">
-     <div class="card">
-     <div class="card-header">
-    <h5 class="mb-0">
-     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">ADC Nasıl Kullanılır</button>
-     </h5>
-     </div>
-     <div id="collapse2" class="collapse">
-    <div class="card-body">
-      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-     </div>
-     </div>
-    </div>
-    </div>
-          
-   <div class="accordion-card">
-  <div class="card">
-  <div class="card-header">
-   <h5 class="mb-0">
-    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">
-      UART Nasıl Programlanır</button>
-    </h5>
-     </div>
-    <div id="collapse3" class="collapse">
-     <div class="card-body">
-      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-     </div>
-    </div>
-     </div>
-    </div>
-     </div>
-    </div>
-       <br> 
-      <div class="container mt-5">
-    <div class="accordion-container" id="accordion1">
-  <div class="accordion-card">
-    <div class="card">
-     <div class="card-header">
-     <h5 class="mb-0">
-     <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">GPIO Nasıl Programlanır</button>
-     </h5>
-   </div>
-      <div id="collapse1" class="collapse">
+        <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6">LCD'yi Arduino'ya Bağlama</button>
+       </h5>
+       </div>
+      <div id="collapse6" class="collapse">
        <div class="card-body">
-        GPIO Nasıl Programlanır
-        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+       Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+       </div>
+       </div>
+       </div>
+       </div>
       </div>
-       </div>
-       </div>
-     </div>
-          
-     <div class="accordion-card">
-     <div class="card">
-      <div class="card-header">
-     <h5 class="mb-0">
-      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">Robotik ve 3D baskı</button>
-        </h5>
       </div>
-     <div id="collapse2" class="collapse">
-      <div class="card-body">
-        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-       </div>
-        </div>
-        </div>
-         </div>
-          
-          <div class="accordion-card">
-          <div class="card">
-          <div class="card-header">
-          <h5 class="mb-0">
-      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">LCD'yi Arduino'ya Bağlama</button>
-          </h5>
-        </div>
-        <div id="collapse3" class="collapse">
-       <div class="card-body">
-        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-         </div>
-         </div>
-        </div>
-       </div>
-         </div>
-      </div>
-        
-         
+       
      <br><br><br><br><br><br>
-        <div class="container">
+
+        <div class="containerr">
         <div class="row">
        <div class="col-md-4">
        <div class="custom-box">
@@ -464,9 +495,41 @@
      </div>
       </div>
        </div>
+
+       <br><br><br>
+
+       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="img/instegram.png"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="img/facebook.png"><svg class="bi" width="24" height="24"><use xlink:href="https://www.facebook.com/profile.php?id=100086756217973"></use></svg></a></li>
+        </ul>
+      </footer>
+      <br><br>
+      </main>
     
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    
+    window.onload = function() { 
+        var finishButton = document.getElementById('finish-button');
+        finishButton.addEventListener('click', function() {    
+          var evetButtons = document.querySelectorAll('input[value="Evet"]:checked');
+            var hayirButtons = document.querySelectorAll('input[value="Hayır"]:checked');    
+            var evetCount = evetButtons.length;
+            var hayirCount = hayirButtons.length;      
+          alert("Evet: " + evetCount + "\nHayır: " + hayirCount);
+         });
+    };
+</script>
 </body>
 </html>
