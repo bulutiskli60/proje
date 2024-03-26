@@ -13,6 +13,7 @@
 
         body{
             height: 250vh;
+            width: 100%;
             background-color: #f8f9fa;
             margin-bottom: 60px;
         
@@ -40,8 +41,9 @@
         }
 
         main{
-          margin-right: 40px;
-          margin-left: 40px;
+          
+          margin-right: 100px;
+          margin-left: 100px;
         }
         
 
@@ -137,7 +139,7 @@
             font-weight: bold;
             color:black;
             size: 30px;
-            font-size: 27px;
+            font-size: 23px;
         }
         .custom-box {
       margin: 10px;
@@ -188,6 +190,9 @@
 </head>
 <body>
   <main>
+
+    <div class="container pr-5 pl-5"></div>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
     <a class="navbar-brand" href="#">BULUT SATIŞ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -210,15 +215,16 @@
   <br><br><br><br> 
 
     
-      <div class="jumbotron my-3 mx-auto px-5">
-        <h1 class="display-4">arduino hakkında</h1>
-        <p class="lead">Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder.</p>
-        <hr class="my-4">
-        <p>daha fazla bilgi için aşşagıdaki butona tıklayınız.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">bilgi için</a>
-        </p>
-    </div> 
+  <div class="jumbotron my-3 mx-auto px-5" >
+    <h1 class="display-4">arduino hakkında</h1>
+    <p class="lead">Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder.</p>
+    <hr class="my-4">
+    <p>daha fazla bilgi için aşşagıdaki butona tıklayınız.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">bilgi için</a>
+    </p>
+</div>
+    <br><br><br><br>
 
     <div class="container pr-5">
         <div class="row ">
@@ -250,7 +256,7 @@
           </div>
           </div>
         </div> 
-      
+       
 
         <br>
         <br>
@@ -278,60 +284,60 @@
 
        <div class="containerr pr-5">
         <div class="question-container pr-5">
-            <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
-            <div class="options-container">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
-                    <label class="form-check-label" for="q1_option1">Evet</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
-                    <label class="form-check-label" for="q1_option2">Hayır</label>
-                </div>
-            </div>
+         <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
+         <div class="options-container">
+         <div class="form-check">
+          <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
+          <label class="form-check-label" for="q1_option1">Evet</label>
+         </div>
+          <div class="form-check">
+          <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
+          <label class="form-check-label" for="q1_option2">Hayır</label>
+          </div>
+          </div>
         </div>
     
         <div class="question-container pr-5">
-            <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
-            <div class="options-container">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
-                    <label class="form-check-label" for="q2_option1">Evet</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
-                    <label class="form-check-label" for="q2_option2">Hayır</label>
-                </div>
-            </div>
+           <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
+           <div class="options-container">
+           <div class="form-check">
+           <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
+          <label class="form-check-label" for="q2_option1">Evet</label>
+         </div>
+        <div class="form-check">
+        <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
+       <label class="form-check-label" for="q2_option2">Hayır</label>
+        </div>
+        </div>
         </div>
     
         <div class="question-container pr-5">
-            <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
-            <div class="options-container">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
-                    <label class="form-check-label" for="q3_option1">Evet</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
-                    <label class="form-check-label" for="q3_option2">Hayır</label>
-                </div>
-            </div>
+      <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
+      <div class="options-container">
+       <div class="form-check">
+       <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
+      <label class="form-check-label" for="q3_option1">Evet</label>
+      </div>
+      <div class="form-check">
+     <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
+      <label class="form-check-label" for="q3_option2">Hayır</label>
+       </div>
+       </div>
         </div>
     
         <div class="question-container pr-5">
-            <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
-            <div class="options-container">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
-                    <label class="form-check-label" for="q4_option1">Evet</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
-                    <label class="form-check-label" for="q4_option2">Hayır</label>
-                </div>
-            </div>
-        </div>
+    <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
+    <div class="options-container">
+      <div class="form-check">
+       <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
+      <label class="form-check-label" for="q4_option1">Evet</label>
+    </div>
+     <div class="form-check">
+    <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
+     <label class="form-check-label" for="q4_option2">Hayır</label>
+   </div>
+     </div>
+    </div>
     </div>
     <br>
     <div class="button-container">
@@ -343,26 +349,26 @@
       
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
-          <div class="col">
-              <div class="card" style="height: 300px;">
-                  <img src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino İle Akıllı Güneş Takip Sistemi">
-                  <div class="card-body">
-                      <h5 class="card-title">Arduino İle Akıllı Güneş Takip Sistemi</h5>
-                      <p class="card-text">Bu yazımızda yapacağımız projeyi, sizin için set haline getirdik. Güneş takip proje setini bulut satış'dan güvenli bir şekilde satın alabilirsiniz.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card" style="height: 300px;">
-                  <img src="img/örümcek robot yapımı.png" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino ile Örümcek Robot">
-                  <div class="card-body">
-                      <h5 class="card-title">Arduino ile Örümcek Robot</h5>
-                      <p class="card-text">İsminden de anlaşılacağı üzere bir örümcek gibi hareket eden bir robottur. 8 yerine 4 bacak kullanacağımızdan dolayı hareketleri birebir örümcek gibi değildir.</p>
-                  </div>
-              </div>
-          </div>
+    <div class="col">
+     <div class="card" style="height: 300px;">
+    <img id="image1" src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino İle Akıllı Güneş Takip Sistemi">
+     <div class="card-body">
+      <h5 class="card-title">Arduino İle Akıllı Güneş Takip Sistemi</h5>
+       <p class="card-text">Bu yazımızda yapacağımız projeyi, sizin için set haline getirdik. Güneş takip proje setini bulut satış'dan güvenli bir şekilde satın alabilirsiniz.</p>
+        </div>
+        </div>
+        </div>
+         <div class="col">
+       <div class="card" style="height: 300px;">
+      <img id="image2" src="img/örümcek robot yapımı.png" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino ile Örümcek Robot">
+      <div class="card-body">
+      <h5 class="card-title">Arduino ile Örümcek Robot</h5>
+     <p class="card-text">İsminden de anlaşılacağı üzere bir örümcek gibi hareket eden bir robottur. 8 yerine 4 bacak kullanacağımızdan dolayı hareketleri birebir örümcek gibi değildir.</p>
+     </div>
       </div>
-  </div>
+      </div>
+      </div>
+     </div>
 
         <br>
         <br>
@@ -498,20 +504,47 @@
 
        <br><br><br>
 
-       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-        </div>
+       <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>menü</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">anasayfa</a></li>
+              <li class="nav-item mb-2"><a href="https://www.robotistan.com/arduino-uno-r3-klon" class="nav-link p-0 text-body-secondary">satış</a></li>
+              <li class="nav-item mb-2"><a href="giris.html" class="nav-link p-0 text-body-secondary">giriş</a></li>
+              <li class="nav-item mb-2"><a href="kayit.html" class="nav-link p-0 text-body-secondary">kayıt</a></li>             
+            </ul>
+          </div>
     
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="img/instegram.png"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="img/facebook.png"><svg class="bi" width="24" height="24"><use xlink:href="https://www.facebook.com/profile.php?id=100086756217973"></use></svg></a></li>
-        </ul>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>menü</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">anasayfa</a></li>
+              <li class="nav-item mb-2"><a href="https://www.robotistan.com/arduino-uno-r3-klon" class="nav-link p-0 text-body-secondary">satış</a></li>
+              <li class="nav-item mb-2"><a href="giris.html" class="nav-link p-0 text-body-secondary">giris</a></li>
+              <li class="nav-item mb-2"><a href="kayit.html" class="nav-link p-0 text-body-secondary">kayıt</a></li>
+            </ul>
+          </div>
+    
+          
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>             
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">tıklayınız</button>
+              </div>
+              <br>
+              <H3>BULUT SATIŞ</H3>
+              <H6>TEL: 531 111 11 11</H6> 
+            </form>
+          </div>
+        </div>
       </footer>
       <br><br>
+
+    </div>
       </main>
     
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -531,5 +564,45 @@
          });
     };
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var optionsContainers = document.querySelectorAll('.options-container');
+
+    optionsContainers.forEach(function(container) {
+        container.addEventListener('click', function(event) {
+            var target = event.target;
+            if (target.matches('input[type="radio"]')) {
+                var questionTitle = container.closest('.question-container').querySelector('.question-title');
+
+                if (target.value === "Hayır") {
+                    questionTitle.style.color = 'red';
+                } else if (target.value === "Evet") {
+                    questionTitle.style.color = 'green';
+                }
+            }
+        });
+    });
+
+});
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var moreInfoButtons = document.querySelectorAll('.btn-primary');
+
+      moreInfoButtons.forEach(function(button) {
+          button.addEventListener('click', function(event) {
+              event.preventDefault(); 
+              var confirmation = confirm("Gitmek istiyor musunuz?"); 
+
+              if (confirmation) {
+                  window.location.href = button.getAttribute('href'); 
+              } else {
+                  
+              }
+          });
+      });
+  });
+</script>
+
 </body>
 </html>
