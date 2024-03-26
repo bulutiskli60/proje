@@ -221,7 +221,7 @@
     <hr class="my-4">
     <p>daha fazla bilgi için aşşagıdaki butona tıklayınız.</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">bilgi için</a>
+        <a class="btn1 btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">bilgi için</a>
     </p>
 </div>
     <br><br><br><br>
@@ -268,7 +268,7 @@
       <div class="col-md-6">
        <h1>satışlar hakkında</h1>
        <br>
-      <a href="https://www.robotistan.com/arduino-uno-r3-klon" class="btn btn-primary">Daha Fazla</a>
+      <a href="https://www.robotistan.com/arduino-uno-r3-klon" class="btn1  btn-primary">Daha Fazla</a>
      </div>
      <div class="col-md-6">
       <p>şuan piyasada en çok satış yapan 2.firma olmaktan gurur duyuyoruz</p>
@@ -346,29 +346,21 @@
     
     <br><br><br>
       
-      
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px;">
-    <div class="col">
-     <div class="card" style="height: 300px;">
-    <img id="image1" src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino İle Akıllı Güneş Takip Sistemi">
-     <div class="card-body">
-      <h5 class="card-title">Arduino İle Akıllı Güneş Takip Sistemi</h5>
-       <p class="card-text">Bu yazımızda yapacağımız projeyi, sizin için set haline getirdik. Güneş takip proje setini bulut satış'dan güvenli bir şekilde satın alabilirsiniz.</p>
-        </div>
-        </div>
-        </div>
-         <div class="col">
-       <div class="card" style="height: 300px;">
-      <img id="image2" src="img/örümcek robot yapımı.png" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino ile Örümcek Robot">
-      <div class="card-body">
-      <h5 class="card-title">Arduino ile Örümcek Robot</h5>
-     <p class="card-text">İsminden de anlaşılacağı üzere bir örümcek gibi hareket eden bir robottur. 8 yerine 4 bacak kullanacağımızdan dolayı hareketleri birebir örümcek gibi değildir.</p>
-     </div>
+
+     <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-6">
+              <img id="image1" class="img-fluid" height="600px" width="600px" src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg" alt="Resim 1">
+              <p id="text1"> <h5>Arduino İle Akıllı Güneş Takip Sistemi</h5>Bu yazımızda yapacağımız projeyi, sizin için set haline getirdik. Güneş takip proje setini bulut satış'dan güvenli bir şekilde satın alabilirsiniz.</p>
+              <button onclick="changeImage(1)" class="btn btn-primary">Sonraki Resim</button>
+          </div>
+          <div class="col-md-6">
+              <img id="image2" class="img-fluid" height="600px" width="600px" src="img/örümcek robot yapımı.png" alt="Resim 2">
+              <p id="text2"><h5>Arduino ile Örümcek Robot</h5>İsminden de anlaşılacağı üzere bir örümcek gibi hareket eden bir robottur. 8 yerine 4 bacak kullanacağımızdan dolayı hareketleri birebir örümcekdir</p>
+              <button onclick="changeImage(2)" class="btn btn-primary">Sonraki Resim</button>
+          </div>
       </div>
-      </div>
-      </div>
-     </div>
+  </div>
 
         <br>
         <br>
@@ -587,9 +579,9 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-      var moreInfoButtons = document.querySelectorAll('.btn-primary');
+      var btn1Buttons = document.querySelectorAll('.btn1');
 
-      moreInfoButtons.forEach(function(button) {
+      btn1Buttons.forEach(function(button) {
           button.addEventListener('click', function(event) {
               event.preventDefault(); 
               var confirmation = confirm("Gitmek istiyor musunuz?"); 
@@ -602,6 +594,21 @@ document.addEventListener("DOMContentLoaded", function() {
           });
       });
   });
+</script>
+<script>
+  var images = [" img/örümcek robot.jpg", "img/güneş takip cihazı.jpg ", ]; 
+  var currentIndex1 = 0;
+  var currentIndex2 = 1;
+
+  function changeImage(number) {
+      if (number === 1) {
+          currentIndex1 = (currentIndex1 + 1) % images.length;
+          document.getElementById("image1").src = images[currentIndex1];         
+      } else if (number === 2) {
+          currentIndex2 = (currentIndex2 + 1) % images.length;
+          document.getElementById("image2").src = images[currentIndex2];
+      }
+  }
 </script>
 
 </body>
