@@ -8,42 +8,7 @@
     <link rel="icon" type="image/png" href="img/faviconn.png">
 
     <style>
-      #main {
-            width: 80%; /* Adjust as needed */
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        /* Media queries for different screen sizes */
-        @media only screen and (max-width: 600px) {
-            /* Styles for phones */
-            #main {
-                width: 90%; /* Adjust as needed */
-            }
-        }
-
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            /* Styles for tablets */
-            #main {
-                width: 70%; /* Adjust as needed */
-            }
-        }
-
-        @media only screen and (min-width: 1025px) {
-            /* Styles for computers */
-            #main {
-                width: 60%; /* Adjust as needed */
-            }
-        }
-
-        /* Additional styles for items inside main */
-        .main-item {
-            margin: 10px; /* Add margin between items */
-            max-width: 100%; /* Ensure items don't exceed container width */
-        }
-
+      
 
 
         body{
@@ -218,13 +183,83 @@
   justify-content: center; 
   align-items: center; 
 }
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 1000;
+  line-height: 50px;
+  transition: background 0.5s;
+}
+
+.scrollToTop:hover {
+  background: #0056b3;
+}
+.modal-content-top {
+  background-color: #fefefe;
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 20px; 
+  border: 1px solid #888;
+  width: 30%; 
+  max-width: 300px; 
+  max-height: 200px; 
+  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+.btnnn{
+  height: 38px;
+}
+@media (max-width: 576px) {
+  .question-container {
+    margin-bottom: 20px;
+  }
+}
+.accordion-card {
+      width: 350px;
+    }
+
+    .up-btn{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000000e9;
+    border: 0;
+}
  
 
   
     </style>
 </head>
 <body>
-  <main id="main">
+  <main>
+    <div class="container"></div>
 
     <div class="container pr-5 pl-5"></div>
 
@@ -250,47 +285,48 @@
   <br><br><br><br> 
 
     
-  <div class="jumbotron my-3 mx-auto px-5" >
-    <h1 class="display-4">arduino hakkında</h1>
+  <div class="jumbotron my-3 mx-auto px-5 text-center">
+    <h1 class="display-4">Arduino Hakkında</h1>
     <p class="lead">Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder.</p>
     <hr class="my-4">
-    <p>daha fazla bilgi için aşşagıdaki butona tıklayınız.</p>
+    <p>Daha fazla bilgi için aşağıdaki butona tıklayınız.</p>
     <p class="lead">
-        <a class="btn1 btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">bilgi için</a>
+        <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">Bilgi için</a>
     </p>
 </div>
+
     <br><br><br><br>
 
-    <div class="container pr-5">
-        <div class="row ">
-         <div class="col-md-6 ">
-         <div class="title ">arduino hakkında sorular</div>
-           <p>Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder. Arduino, sanatçılar, tasarımcılar, hobiciler vb. teknolojiyle ilgilenen herkese elektroniği daha erişilebilir hale getirmek için tasarlanmıştır.</p>
+    <div class="container pr-5 text-center">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="title">Arduino hakkında sorular</div>
+              <p>Arduino ne demek? Önce buradan başlamamız gerek. Arduino, açık kaynaklı bir elektronik kartı ve onu programlamak için kullanılan yazılımı ifade eder. Arduino, sanatçılar, tasarımcılar, hobiciler vb. teknolojiyle ilgilenen herkese elektroniği daha erişilebilir hale getirmek için tasarlanmıştır.</p>
           </div>
-          <div class="col-md-6 ">
-          <div class="row">
-          <div class="col-md-6 ">
-         <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir ve ne işe yarar?</a></div>
-         </div>
-         <div class="col-md-6 ">
-         <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir?</a></div>
+          <div class="col-md-6">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir ve ne işe yarar?</a></div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nedir?</a></div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino öğrenmek zor mu?</a></div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nerede kullanılır?</a></div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino ile ne yapabilirim?</a></div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino pahalı mıdır?</a></div>
+                  </div>
+              </div>
           </div>
-          <div class="col-md-6 ">
-          <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino öğrenmek zor mu?</a></div>
-          </div>
-           <div class="col-md-6 ">
-           <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino nerede kullanılır?</a></div>
-          </div>
-          <div class="col-md-6 ">
-         <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino ile ne yapabilirim?</a></div>
-          </div>
-          <div class="col-md-6 ">
-          <div class="box"><a href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/">Arduino pahalı mıdır?</a></div>
-          </div>
-           </div>
-          </div>
-          </div>
-        </div> 
+      </div>
+  </div>
        
 
         <br>
@@ -298,86 +334,90 @@
        <br>
 
        <div class="container pr-5">
-      <div class="header">
-      <div class="row">
-      <div class="col-md-6">
-       <h1>satışlar hakkında</h1>
-       <br>
-      <a href="https://www.robotistan.com/arduino-uno-r3-klon" class="btn1  btn-primary">Daha Fazla</a>
-     </div>
-     <div class="col-md-6">
-      <p>şuan piyasada en çok satış yapan 2.firma olmaktan gurur duyuyoruz</p>
-     <p>hedefimiz çok geçmeden 10 milyar satış yapmaktır</p>
-       </div>
-     </div>
-       </div>
+        <div class="header">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="text-center">satışlar hakkında</h1>
+              <br>
+              <a href="https://www.robotistan.com/arduino-uno-r3-klon" class="btn1 btn-primary d-block mx-auto text-center" style="width: 200px;">Daha Fazla</a>
+            </div>
+            <div class="col-md-6">
+              <p>şuan piyasada en çok satış yapan 2.firma olmaktan gurur duyuyoruz</p>
+              <p>hedefimiz çok geçmeden 10 milyar satış yapmaktır</p>
+            </div>
+          </div>
+        </div>
       </div>
+
        <br>
        <br>
        <br>
        <br>
 
-       <div class="containerr pr-5">
-        <div class="question-container pr-5">
-         <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
-         <div class="options-container">
-         <div class="form-check">
-          <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
-          <label class="form-check-label" for="q1_option1">Evet</label>
-         </div>
-          <div class="form-check">
-          <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
-          <label class="form-check-label" for="q1_option2">Hayır</label>
+       <div class="container">
+        <div class="containerr pr-5">
+          <div class="question-container pr-5">
+            <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
+            <div class="options-container">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
+                <label class="form-check-label" for="q1_option1">Evet</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
+                <label class="form-check-label" for="q1_option2">Hayır</label>
+              </div>
+            </div>
           </div>
+      
+          <div class="question-container pr-5">
+            <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
+            <div class="options-container">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
+                <label class="form-check-label" for="q2_option1">Evet</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
+                <label class="form-check-label" for="q2_option2">Hayır</label>
+              </div>
+            </div>
+          </div>
+      
+          <div class="question-container pr-5">
+            <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
+            <div class="options-container">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
+                <label class="form-check-label" for="q3_option1">Evet</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
+                <label class="form-check-label" for="q3_option2">Hayır</label>
+              </div>
+            </div>
+          </div>
+      
+          <div class="question-container pr-5">
+            <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
+            <div class="options-container">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
+                <label class="form-check-label" for="q4_option1">Evet</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
+                <label class="form-check-label" for="q4_option2">Hayır</label>
+              </div>
+            </div>
           </div>
         </div>
-    
-        <div class="question-container pr-5">
-           <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
-           <div class="options-container">
-           <div class="form-check">
-           <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
-          <label class="form-check-label" for="q2_option1">Evet</label>
-         </div>
-        <div class="form-check">
-        <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
-       <label class="form-check-label" for="q2_option2">Hayır</label>
-        </div>
-        </div>
-        </div>
-    
-        <div class="question-container pr-5">
-      <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
-      <div class="options-container">
-       <div class="form-check">
-       <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
-      <label class="form-check-label" for="q3_option1">Evet</label>
       </div>
-      <div class="form-check">
-     <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
-      <label class="form-check-label" for="q3_option2">Hayır</label>
-       </div>
-       </div>
-        </div>
-    
-        <div class="question-container pr-5">
-    <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
-    <div class="options-container">
-      <div class="form-check">
-       <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
-      <label class="form-check-label" for="q4_option1">Evet</label>
-    </div>
-     <div class="form-check">
-    <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
-     <label class="form-check-label" for="q4_option2">Hayır</label>
-   </div>
-     </div>
-    </div>
-    </div>
-    <br>
-    <div class="button-container">
-      <button id="finish-button">Finish</button>
-    </div>
+      
+      <div class="button-container text-center">
+        <button id="finish-button">Finish</button>
+      </div>
+      
     
     <br><br><br>
       
@@ -400,109 +440,147 @@
         <br>
         <br>
         <br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br>
 
         
-          <div class="containerr mt-5">
-            <div class="accordion-container" id="accordion1">
-             <div class="accordion-card">
-           <div class="card">
-            <div class="card-header">
-            <h5 class="mb-0">
-             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Bulut Bilişim</button>
-            </h5>
-           </div>
-           <div id="collapse1" class="collapse">
-            <div class="card-body">
-           Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+         
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-card">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Bulut Bilişim
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                      <div class="card-body">
+                        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-card">
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          ADC Nasıl Kullanılır
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                      <div class="card-body">
+                        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="accordion" id="accordionExample3">
+                <div class="accordion-card">
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          UART Nasıl Programlanır
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                      <div class="card-body">
+                        Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-         </div>
-           </div>
-           </div>
-      
-             <div class="accordion-card">
-          <div class="card">
-        <div class="card-header">
-         <h5 class="mb-0">
-           <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">ADC Nasıl Kullanılır</button>
-          </h5>
-           </div>
-             <div id="collapse2" class="collapse">
-            <div class="card-body">
-             Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-            </div>
-           </div>
-           </div>
-            </div>
-      
-             <div class="accordion-card">
-           <div class="card">
-           <div class="card-header">
-          <h5 class="mb-0">
-         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">UART Nasıl Programlanır</button>
-          </h5>
-          </div>
-          <div id="collapse3" class="collapse">
-          <div class="card-body">
-           Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-           </div>
-           </div>
-            </div>
-             </div>
-            </div>
-             </div>
+        </div>
             
       
       <br>
       
-             <div class="containerr mt-5" >
-             <div class="accordion-container" id="accordion2">
-              <div class="accordion-card">
-             <div class="card">
-              <div class="card-header">
-              <h5 class="mb-0">
-             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">GPIO Nasıl Programlanır</button>
-              </h5>
-              </div>
-               <div id="collapse4" class="collapse">
-             <div class="card-body">
-            GPIO Nasıl Programlanır Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-             </div>
-             </div>
-             </div>
-              </div>
       
-             <div class="accordion-card">
-           <div class="card">
-           <div class="card-header">
-          <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5">Robotik ve 3D baskı</button>
-           </h5>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample4">
+        <div class="accordion-card">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Bulut Bilişim
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
+              <div class="card-body">
+                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+              </div>
+            </div>
           </div>
-          <div id="collapse5" class="collapse">
-         <div class="card-body">
-         Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-         </div>
         </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample5">
+        <div class="accordion-card">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  ADC Nasıl Kullanılır
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+              <div class="card-body">
+                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+              </div>
+            </div>
+          </div>
         </div>
-         </div>
-      
-          <div class="accordion-card">
-         <div class="card">
-        <div class="card-header">
-        <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6">LCD'yi Arduino'ya Bağlama</button>
-       </h5>
-       </div>
-      <div id="collapse6" class="collapse">
-       <div class="card-body">
-       Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-       </div>
-       </div>
-       </div>
-       </div>
       </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="accordion" id="accordionExample6">
+        <div class="accordion-card">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  UART Nasıl Programlanır
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+              <div class="card-body">
+                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
        
      <br><br><br><br><br><br>
 
@@ -531,9 +609,15 @@
 
        <br><br><br>
 
-       <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
+       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+        </div>
+       
+          <div class="col-6 col-md-1 mb-2">
             <h5>menü</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">anasayfa</a></li>
@@ -543,7 +627,7 @@
             </ul>
           </div>
     
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-1 mb-2">
             <h5>menü</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">anasayfa</a></li>
@@ -553,31 +637,41 @@
             </ul>
           </div>
     
-          
-    
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>             
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email ">
-                <button class="btn btn-primary" type="button">tıklayınız</button>
-              </div>
-              <br>
-              <H3>BULUT SATIŞ</H3>
-              <H6>TEL: 531 111 11 11</H6> 
-            </form>
-          </div>
-        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="img/instegram.png"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
       </footer>
+
+       
       <br><br>
 
     </div>
-    <button onclick="topFunction()" id="goToTopBtn" title="Yukarı Çık">↑</button>
+  </div>
+  <a href="#" class="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  
+<div id="myModal" class="modal">
+  <div class="modal-content-top">
+    <span class="close">&times;</span>
+    <p>devam etmek istiyor musunuz?</p>
+    <button id="confirmButton">Evet</button>
+    <button id="cancelButton">Hayır</button>
+  </div>
+</div>
+
+<a href="#" class="up-btn"></a>
+
       </main>
     
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
 
   <script>
     
@@ -615,19 +709,37 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-      var btn1Buttons = document.querySelectorAll('.btn1');
+      var modal = document.getElementById('myModal');
+      var moreInfoButtons = document.querySelectorAll('.btn-primary');
 
-      btn1Buttons.forEach(function(button) {
+      moreInfoButtons.forEach(function(button) {
           button.addEventListener('click', function(event) {
-              event.preventDefault(); 
-              var confirmation = confirm("Gitmek istiyor musunuz?"); 
+              event.preventDefault();
+              modal.style.display = "block";
+              var confirmButton = document.getElementById('confirmButton');
+              var cancelButton = document.getElementById('cancelButton');
 
-              if (confirmation) {
-                  window.location.href = button.getAttribute('href'); 
-              } else {
-                  
+              confirmButton.onclick = function() {
+                  window.location.href = button.getAttribute('href');
+              }
+
+              cancelButton.onclick = function() {
+                  modal.style.display = "none";
               }
           });
+      });
+
+      
+      var closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", function() {
+          modal.style.display = "none";
+      });
+
+     
+      window.addEventListener("click", function(event) {
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
       });
   });
 </script>
@@ -647,10 +759,21 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 </script>
 <script>
-  function topFunction() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
-  }
+  $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
+});
 </script>
+
 </body>
 </html>
