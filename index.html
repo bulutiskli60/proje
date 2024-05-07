@@ -8,7 +8,75 @@
     <link rel="icon" type="image/png" href="img/faviconn.png">
 
     <style>
-      
+      ChatGPT 3.5
+
+User
+      } else if (number === 2) {
+          currentIndex2 = (currentIndex2 + 1) % images.length;
+          document.getElementById("image2").src = images[currentIndex2];
+      }
+  }
+</script>
+<script>
+  function topFunction() {
+   
+ChatGPT
+It seems like you're working with JavaScript code. What would you like assistance with regarding the topFunction?
+
+User
+      } else if (number === 2) {
+          currentIndex2 = (currentIndex2 + 1) % images.length;
+          document.getElementById("image2").src = images[currentIndex2];
+      }
+  }
+</script>
+<script>
+  function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  }
+</script>
+</body>
+</html>    main içindeki içerikleri telefon tablet ve bilgisiyar olmak üzere boyutlandır
+ChatGPT
+It seems like you want to scale the content within the main element for different device sizes, such as phones, tablets, and computers. To achieve this, you can use CSS media queries to adjust the styling based on the device's screen width. Here's an example of how you can structure your CSS:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        /* Default styles for the main content */
+        #main {
+            width: 80%; /* Adjust as needed */
+            margin: auto;
+        }
+
+        /* Media queries for different screen sizes */
+        @media only screen and (max-width: 600px) {
+            /* Styles for phones */
+            #main {
+                width: 90%; /* Adjust as needed */
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            /* Styles for tablets */
+            #main {
+                width: 70%; /* Adjust as needed */
+            }
+        }
+
+        @media only screen and (min-width: 1025px) {
+            /* Styles for computers */
+            #main {
+                width: 60%; /* Adjust as needed */
+            }
+        }
 
 
         body{
@@ -189,7 +257,7 @@
     </style>
 </head>
 <body>
-  <main>
+  <main id="main">
 
     <div class="container pr-5 pl-5"></div>
 
