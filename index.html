@@ -6,6 +6,7 @@
     <title>anasayfa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="img/faviconn.png">
+    
 
     <style>
       
@@ -16,7 +17,7 @@
             width: 100%;
             background-color: #f8f9fa;
             margin-bottom: 60px;
-        
+            font-family: Arial, sans-serif;
             padding: 20px;
         
 
@@ -242,16 +243,45 @@
 
     .up-btn{
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 30px;
+    bottom: 35px;
     background: rgb(255, 255, 255);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 5px #000000e9;
     border: 0;
+    text-align:center;
+    
+     
+      
+    
 }
+.up-btn>svg{
+  height: 40px;
+  width: 40px; ;
+}
+#zaman{
+  text-align: end;
+}
+
+.question-container {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .containerr {
+            padding-right: 0 !important;
+        }
+        
+        .question-container {
+            padding-right: 0 !important;
+        }
+    }
+
+
+
  
 
   
@@ -259,29 +289,35 @@
 </head>
 <body>
   <main>
+    <div id="zaman"></div>
+    
+
     <div class="container"></div>
 
-    <div class="container pr-5 pl-5"></div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
-    <a class="navbar-brand" href="#">BULUT SATIŞ</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarText">
-     <ul class="navbar-nav">
-    <li class="nav-item active">
-   <a class="nav-link" href="anasayfa.html">anasayfa <span class="sr-only">(current)</span></a>
-   </li>
-    <li class="nav-item">
-    <a class="nav-link" href="https://www.robotistan.com/arduino-uno-r3-klon">satış</a>
-    </li>
-     <li class="nav-item">
-    <a class="nav-link" href="giris.html">giriş</a>
-    </li>
-    </ul>
-    </div>
-  </nav> 
+    <div class="container pr-5 pl-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+          <a class="navbar-brand" href="#">BULUT SATIŞ</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="anasayfa.html">anasayfa <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.robotistan.com/arduino-uno-r3-klon">satış</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="giris.html">giriş</a>
+                  </li>
+                
+              </ul>
+          </div>
+      </nav>
+      </div>
+      
+      
   <br><br><br><br> 
 
     
@@ -291,7 +327,7 @@
     <hr class="my-4">
     <p>Daha fazla bilgi için aşağıdaki butona tıklayınız.</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" role="button">Bilgi için</a>
+        <a class="btn btn-primary btn-lg" href="https://maker.robotistan.com/arduino-nedir-ne-ise-yarar/" style="width: 150px;" role="button">Bilgi için</a>
     </p>
 </div>
 
@@ -356,67 +392,67 @@
 
        <div class="container">
         <div class="containerr pr-5">
-          <div class="question-container pr-5">
-            <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
-            <div class="options-container">
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
-                <label class="form-check-label" for="q1_option1">Evet</label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
-                <label class="form-check-label" for="q1_option2">Hayır</label>
-              </div>
+            <div class="question-container pr-5">
+                <h2 class="question-title">Soru 1: sayfa güzel mi?</h2>
+                <div class="options-container">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_option1" name="q1_option" value="Evet">
+                        <label class="form-check-label" for="q1_option1">Evet</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_option2" name="q1_option" value="Hayır">
+                        <label class="form-check-label" for="q1_option2">Hayır</label>
+                    </div>
+                </div>
             </div>
-          </div>
       
-          <div class="question-container pr-5">
-            <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
-            <div class="options-container">
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
-                <label class="form-check-label" for="q2_option1">Evet</label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
-                <label class="form-check-label" for="q2_option2">Hayır</label>
-              </div>
+            <div class="question-container pr-5">
+                <h2 class="question-title">Soru 2: başka şeylerde satılmalı mı?</h2>
+                <div class="options-container">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_option1" name="q2_option" value="Evet">
+                        <label class="form-check-label" for="q2_option1">Evet</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_option2" name="q2_option" value="Hayır">
+                        <label class="form-check-label" for="q2_option2">Hayır</label>
+                    </div>
+                </div>
             </div>
-          </div>
       
-          <div class="question-container pr-5">
-            <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
-            <div class="options-container">
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
-                <label class="form-check-label" for="q3_option1">Evet</label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
-                <label class="form-check-label" for="q3_option2">Hayır</label>
-              </div>
+            <div class="question-container pr-5">
+                <h2 class="question-title">Soru 3: bu site size yardımcı oldu mu?</h2>
+                <div class="options-container">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_option1" name="q3_option" value="Evet">
+                        <label class="form-check-label" for="q3_option1">Evet</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_option2" name="q3_option" value="Hayır">
+                        <label class="form-check-label" for="q3_option2">Hayır</label>
+                    </div>
+                </div>
             </div>
-          </div>
       
-          <div class="question-container pr-5">
-            <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
-            <div class="options-container">
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
-                <label class="form-check-label" for="q4_option1">Evet</label>
-              </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
-                <label class="form-check-label" for="q4_option2">Hayır</label>
-              </div>
+            <div class="question-container pr-5">
+                <h2 class="question-title">Soru 4: ürünlerimizi beğendiniz mi?</h2>
+                <div class="options-container">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_option1" name="q4_option" value="Evet">
+                        <label class="form-check-label" for="q4_option1">Evet</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_option2" name="q4_option" value="Hayır">
+                        <label class="form-check-label" for="q4_option2">Hayır</label>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
       
-      <div class="button-container text-center">
+    <div class="button-container text-center">
         <button id="finish-button">Finish</button>
-      </div>
+    </div>
       
     
     <br><br><br>
@@ -425,12 +461,12 @@
      <div class="container mt-5">
       <div class="row">
           <div class="col-md-6">
-              <img id="image1" class="img-fluid" height="600px" width="600px" src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg" alt="Resim 1">
+              <img id="image1" class="img-fluid" height="600px" width="600px" src="img/Arduino-Ile-Akilli-Gunes-Takip-Sistemi.jpg"  alt="Resim 1">
               <p id="text1"> <h5>Arduino İle Akıllı Güneş Takip Sistemi</h5>Bu yazımızda yapacağımız projeyi, sizin için set haline getirdik. Güneş takip proje setini bulut satış'dan güvenli bir şekilde satın alabilirsiniz.</p>
               <button onclick="changeImage(1)" class="btn btn-primary">Sonraki Resim</button>
           </div>
           <div class="col-md-6">
-              <img id="image2" class="img-fluid" height="600px" width="600px" src="img/örümcek robot yapımı.png" alt="Resim 2">
+              <img id="image2" class="img-fluid" height="600px" width="600px" src="img/örümcek robot yapımı.png"   alt="Resim 2">
               <p id="text2"><h5>Arduino ile Örümcek Robot</h5>İsminden de anlaşılacağı üzere bir örümcek gibi hareket eden bir robottur. 8 yerine 4 bacak kullanacağımızdan dolayı hareketleri birebir örümcekdir</p>
               <button onclick="changeImage(2)" class="btn btn-primary">Sonraki Resim</button>
           </div>
@@ -452,12 +488,12 @@
                   <div class="card">
                     <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
                           Bulut Bilişim
                         </button>
                       </h2>
                     </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
                       <div class="card-body">
                         Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
                       </div>
@@ -473,12 +509,12 @@
                   <div class="card">
                     <div class="card-header" id="headingTwo">
                       <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
                           ADC Nasıl Kullanılır
                         </button>
                       </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
                       <div class="card-body">
                         Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
                       </div>
@@ -494,12 +530,12 @@
                   <div class="card">
                     <div class="card-header" id="headingThree">
                       <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3">
                           UART Nasıl Programlanır
                         </button>
                       </h2>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                    <div id="collapseThree3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
                       <div class="card-body">
                         Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
                       </div>
@@ -510,77 +546,76 @@
             </div>
           </div>
         </div>
-            
       
       <br>
       
       
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="accordion" id="accordionExample4">
-        <div class="accordion-card">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Bulut Bilişim
-                </button>
-              </h2>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="accordion" id="accordionExample4">
+              <div class="accordion-card">
+                <div class="card">
+                  <div class="card-header" id="headingOne4">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                        Bulut Bilişim
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne4" class="collapse" aria-labelledby="headingOne4" data-parent="#accordionExample4">
+                    <div class="card-body">
+                      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
-              <div class="card-body">
-                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+          </div>
+      
+          <div class="col-md-4">
+            <div class="accordion" id="accordionExample5">
+              <div class="accordion-card">
+                <div class="card">
+                  <div class="card-header" id="headingTwo5">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                        ADC Nasıl Kullanılır
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo5" class="collapse" aria-labelledby="headingTwo5" data-parent="#accordionExample5">
+                    <div class="card-body">
+                      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="accordion" id="accordionExample6">
+              <div class="accordion-card">
+                <div class="card">
+                  <div class="card-header" id="headingThree6">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                        UART Nasıl Programlanır
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree6" class="collapse" aria-labelledby="headingThree6" data-parent="#accordionExample6">
+                    <div class="card-body">
+                      Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="accordion" id="accordionExample5">
-        <div class="accordion-card">
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  ADC Nasıl Kullanılır
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
-              <div class="card-body">
-                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="accordion" id="accordionExample6">
-        <div class="accordion-card">
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                  UART Nasıl Programlanır
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
-              <div class="card-body">
-                Müşterinin yağlandırma işlemine dikkat etmesi çok önemlidir. Sırf zevk için acıdan nefret ediyor! Aspernatur kimdir! Zahmetli bir iş ve benzerleri için, söz konusu emek ayrımının zevk tarafından geri çevrildiği bir şey için reddedilmek!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
        
      <br><br><br><br><br><br>
 
@@ -663,7 +698,11 @@
   </div>
 </div>
 
-<a href="#" class="up-btn"></a>
+<a href="#" class="up-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+  </svg>
+</a>
 
       </main>
     
@@ -774,6 +813,21 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
+
+<script>
+  function tarihSaat() {
+      var date = new Date().toLocaleString('tr-TR');
+      document.getElementById("zaman").innerHTML = date;
+  }
+  
+  setInterval(tarihSaat, 1000); 
+  </script> 
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>
